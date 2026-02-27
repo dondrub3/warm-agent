@@ -174,3 +174,13 @@ project-management/
 memory/
 *.private.*
 *secret*
+
+# User data and configurations
+user-data/
+commercial-modules/
+deployment-config/
+WARM_AGENT_CONFIG.md
+*.config.*
+*.env*
+*.key*
+*.pem*
