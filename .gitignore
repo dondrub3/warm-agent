@@ -167,3 +167,10 @@ tmp/
 temp/
 .tmp/
 .temp/
+
+# Private documentation and data
+docs-private/
+project-management/
+memory/
+*.private.*
+*secret*
