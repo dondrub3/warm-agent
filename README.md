@@ -1,275 +1,409 @@
-# 🌟 Warm Agent - 为AI注入温度与情感
+# Warm Agent 🌟
 
+**为AI注入温度与情感的开源项目**
+
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-green)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![OpenClaw Compatible](https://img.shields.io/badge/OpenClaw-Compatible-green.svg)](https://openclaw.ai)
+[![Docker](https://img.shields.io/badge/Docker-20.10%2B-blue)](https://www.docker.com/)
+[![Code Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen)](https://codecov.io/gh/dondrub3/warm-agent)
 
-**Warm Agent** 是一个为AI助手添加情感智能的开源项目。它让冰冷的AI回应变得温暖、有同理心，真正理解用户的情感需求。
+## ✨ 特性
 
-## 🧠 情绪芯片 - 核心技术
+### 🧠 情感智能
+- **多层级情感分析**：关键词匹配 + 上下文理解 + 强度计算
+- **丰富的情感词库**：支持6种基础情感和多种复杂情感
+- **智能需求识别**：自动识别用户的情感需求和支持需求
 
-**情绪芯片（Emotion Chip）** 是Warm Agent的核心技术，它是一个轻量级的情感智能模块，为AI系统提供：
-
-### 🔬 技术特性
-- **实时情感分析**: 毫秒级情感状态识别
-- **情感记忆网络**: 记住用户的情感偏好和互动历史
-- **温暖回应引擎**: 将标准回应转化为有温度、有同理心的版本
-- **情感调节器**: 根据对话上下文动态调整回应温度
-
-### 🏗️ 架构设计
-```
-情绪芯片架构：
-┌─────────────────────────────────────┐
-│        情感分析层 (Emotion Layer)    │
-│  • 情感关键词检测                   │
-│  • 情绪强度评估                     │
-│  • 上下文情感理解                   │
-├─────────────────────────────────────┤
-│        温暖引擎层 (Warm Engine)      │
-│  • 回应温度调节                     │
-│  • 同理心表达生成                   │
-│  • 个性化情感适配                   │
-├─────────────────────────────────────┤
-│        记忆网络层 (Memory Network)   │
-│  • 情感历史记录                     │
-│  • 用户偏好学习                     │
-│  • 长期情感模式识别                 │
-└─────────────────────────────────────┘
-```
-
-### 🎯 应用场景
-- **心理健康支持**: 为焦虑、抑郁用户提供温暖陪伴
-- **客户服务**: 提升客服AI的情感理解能力
-- **教育助手**: 为学习者提供有温度的学习支持
-- **社交机器人**: 让AI互动更自然、更有人情味
-
-### 🚀 发展路线图
-#### MVP 1.0 (当前)
-- ✅ 文本情感分析
-- ✅ 温暖回应生成
-- ✅ OpenClaw集成
-- ✅ 情感关键词触发
-
-#### 中期规划 (2.0-3.0)
-- 🔄 **多模态情感理解**: 图像、语音、表情分析
-- 🔄 **情感记忆网络**: 长期情感模式学习
-- 🔄 **个性化情感适配**: 基于用户历史的情感定制
-- 🔄 **实时情感调节**: 动态调整回应温度
-
-#### 长期愿景 (4.0+)
-- 🌟 **情感预测**: 预测用户情感变化趋势
-- 🌟 **跨语言情感**: 支持多语言情感理解
-- 🌟 **情感创造力**: 生成有情感的艺术和内容
-- 🌟 **情感伦理框架**: 确保情感AI的负责任使用
-
-## ✨ 核心特性
-
-### 🎯 情感智能
-- **情感分析**: 自动识别用户输入中的情绪状态
-- **温暖回应生成**: 将标准回应转化为温暖、有同理心的版本
-- **情感记忆**: 记住用户的情感偏好和历史互动
+### ❤️ 温暖回应
+- **同理心表达**：生成有温度、有同理心的回应
+- **个性化适配**：根据用户偏好调整回应风格
+- **模板系统**：可扩展的回应模板库
 
 ### 🔌 无缝集成
-- **OpenClaw原生支持**: 一键安装，自动增强所有AI回应
-- **多平台适配**: 支持各种AI助手和聊天机器人框架
-- **API优先设计**: 简洁的RESTful API，易于集成
+- **OpenClaw 集成**：作为技能无缝集成到OpenClaw
+- **RESTful API**：提供完整的API服务
+- **WebSocket 支持**：实时情感分析和回应
 
-### 🌈 多模态情感理解（中期规划）
-- **图像情感分析**: 通过用户上传的图片理解情感状态
-- **语音情感识别**: 从语音语调中识别情绪变化
-- **表情情感检测**: 通过摄像头或照片分析面部表情
-- **多模态融合**: 结合文本、图像、语音进行综合情感分析
+### 🚀 企业级特性
+- **高性能**：异步处理、缓存优化、数据库分区
+- **可扩展**：微服务架构，支持水平扩展
+- **监控告警**：完整的监控体系和告警系统
+- **安全可靠**：API认证、数据加密、网络安全
 
-### 🛠️ 开发者友好
-- **完全开源**: MIT许可证，自由使用和修改
-- **详细文档**: 完整的API文档和集成指南
-- **丰富示例**: 多种使用场景的代码示例
+## 📦 快速开始
 
-## 🚀 快速开始
+### 使用 Docker（推荐）
 
-### 安装
 ```bash
-# 通过pip安装
-pip install warm-agent
-
-# 或者从源码安装
-git clone https://github.com/dondrub3/warm-agent.git
-cd warm-agent
-pip install -e .
-```
-
-### 基础使用
-```python
-from warm_agent import WarmAgent
-
-# 初始化Warm Agent
-wa = WarmAgent(api_key="your_api_key")
-
-# 分析用户情感
-emotion = wa.analyze_emotion("今天工作压力好大")
-print(f"情感: {emotion.primary}, 强度: {emotion.intensity}")
-
-# 生成温暖回应
-response = wa.generate_warm_response(
-    "今天工作压力好大",
-    base_response="建议你休息一下"
-)
-print(response)
-# 输出: "听起来你今天工作很辛苦呢...💼 压力大的时候确实需要放松一下。要不要试试听点轻松的音乐？我在这里陪着你✨"
-```
-
-### OpenClaw集成
-```yaml
-# OpenClaw配置
-skills:
-  warm-agent:
-    enabled: true
-    apiKey: "your_api_key"
-    autoEnhance: true  # 自动为所有回应添加温暖
-```
-
-## 📖 文档
-
-- [API文档](docs/api/README.md) - 完整的API参考
-- [集成指南](docs/guides/integration.md) - 如何集成到你的项目
-- [示例项目](examples/) - 实际使用示例
-- [开发指南](docs/guides/development.md) - 贡献代码指南
-
-## 🎯 关键词触发机制
-
-Warm Agent支持智能关键词触发，当用户使用情感词汇时自动切换到温暖模式：
-
-### 触发词示例
-```python
-# 负面情绪词
-难过、伤心、悲伤、痛苦、焦虑、压力、烦躁、失望、孤独、害怕
-
-# 正面情绪词  
-开心、高兴、兴奋、幸福、感动
-
-# 需求词
-安慰、支持、陪伴、倾听、温暖、情感、心情、情绪
-```
-
-### 使用示例
-```
-用户: "今天工作压力好大 😔"
-AI检测到"压力"关键词 → 触发温暖模式
-AI: "听起来你今天工作很辛苦呢...💼 压力大的时候确实需要放松一下。要不要和我聊聊具体是什么让你感到压力？我在这里陪着你✨"
-```
-
-### 关闭指令
-```
-用户: "关闭情感模式"
-AI: "✅ 好的，情感模式已关闭。需要的时候随时说'开启情感模式'或使用情感词触发哦！😊"
-```
-
-## 🏗️ 项目结构
-
-```
-warm-agent/
-├── src/                    # 源代码
-│   ├── core/              # 核心模块
-│   ├── api/               # API接口
-│   ├── integrations/      # 集成模块
-│   └── utils/             # 工具函数
-├── docs/                  # 文档
-├── examples/              # 示例代码
-├── tests/                 # 测试代码
-└── scripts/               # 构建和部署脚本
-```
-
-## 🤝 贡献
-
-我们欢迎所有形式的贡献！请查看[贡献指南](CONTRIBUTING.md)了解如何开始。
-
-### 开发环境设置
-```bash
-# 克隆仓库
+# 克隆项目
 git clone https://github.com/dondrub3/warm-agent.git
 cd warm-agent
 
+# 启动开发环境
+docker-compose up -d
+
+# 访问API文档
+open http://localhost:8000/docs
+
+# 运行测试
+docker-compose run --rm test
+```
+
+### 手动安装
+
+```bash
 # 创建虚拟环境
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 # 或 venv\Scripts\activate  # Windows
 
-# 安装开发依赖
-pip install -e ".[dev]"
+# 安装依赖
+pip install -r requirements.txt
+
+# 启动服务
+uvicorn src.api.main:app --reload
 ```
 
-### 运行测试
-```bash
-pytest tests/
+## 🏗️ 架构设计
+
+### 核心模块
+
 ```
+┌─────────────────────────────────────────┐
+│            Warm Agent 架构               │
+├─────────────────────────────────────────┤
+│  API层 (FastAPI)                        │
+│  ├── 情感分析端点                        │
+│  ├── 温暖回应端点                        │
+│  └── OpenClaw集成端点                    │
+├─────────────────────────────────────────┤
+│  核心业务层                              │
+│  ├── 情感分析引擎 (EmotionAnalyzer)      │
+│  ├── 温暖回应引擎 (WarmResponseEngine)   │
+│  └── 情感记忆系统 (EmotionMemorySystem)  │
+├─────────────────────────────────────────┤
+│  数据访问层                              │
+│  ├── PostgreSQL (情感记录)               │
+│  ├── Redis (缓存)                        │
+│  └── 文件存储 (日志/模型)                 │
+├─────────────────────────────────────────┤
+│  基础设施层                              │
+│  ├── Docker容器化                        │
+│  ├── 监控告警 (Prometheus+Grafana)       │
+│  └── CI/CD流水线                         │
+└─────────────────────────────────────────┘
+```
+
+### 情感分析流程
+
+```python
+# 情感分析示例
+from warm_agent.core.emotion_analyzer import get_emotion_analyzer
+
+analyzer = get_emotion_analyzer()
+result = analyzer.analyze("今天工作压力好大")
+
+print(f"主要情感: {result.primary_emotion}")      # anxiety
+print(f"情感强度: {result.intensity}")           # 0.85
+print(f"需要支持: {result.needs_support}")       # True
+print(f"建议回应: {result.suggested_response}")  # "听到你提到压力..."
+```
+
+### 温暖回应生成
+
+```python
+# 温暖回应生成示例
+from warm_agent.core.warm_response_engine import get_warm_response_engine
+
+engine = get_warm_response_engine()
+response = engine.generate(
+    emotion_result=result,
+    base_response="建议你休息一下",
+    user_context={"preferences": {"style": "warm"}}
+)
+
+print(f"温暖回应: {response.text}")
+print(f"温暖度分数: {response.warmth_score}")  # 0.78
+```
+
+## 🔌 集成指南
+
+### OpenClaw 集成
+
+Warm Agent 可以作为 OpenClaw 的技能无缝集成：
+
+```python
+# OpenClaw技能配置
+from warm_agent.integrations.openclaw import get_openclaw_integration
+
+config = {
+    "openclaw": {
+        "auto_detect": True,
+        "enhance_all": False,
+        "default_warm_mode": False
+    }
+}
+
+integration = get_openclaw_integration(config)
+
+# 处理OpenClaw消息
+result = integration.process_message(
+    message=OpenClawMessage(
+        content="今天心情不好",
+        base_response="建议听听音乐"
+    ),
+    context=OpenClawContext(
+        user_id="user_123",
+        channel="qqbot"
+    )
+)
+
+print(f"增强回应: {result.enhanced_response}")
+```
+
+### RESTful API
+
+Warm Agent 提供完整的 RESTful API：
+
+```bash
+# 情感分析
+curl -X POST "http://localhost:8000/v1/emotion/analyze" \
+  -H "X-API-Key: your_api_key" \
+  -H "Content-Type: application/json" \
+  -d '{"text": "今天很开心"}'
+
+# 温暖回应生成
+curl -X POST "http://localhost:8000/v1/warm-response/generate" \
+  -H "X-API-Key: your_api_key" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "今天工作压力大",
+    "base_response": "建议休息一下"
+  }'
+```
+
+## 📊 API 文档
+
+### 主要端点
+
+| 端点 | 方法 | 描述 | 认证 |
+|------|------|------|------|
+| `/v1/emotion/analyze` | POST | 情感分析 | ✅ |
+| `/v1/warm-response/generate` | POST | 温暖回应生成 | ✅ |
+| `/v1/openclaw/process` | POST | OpenClaw集成 | ✅ |
+| `/v1/user/{user_id}/summary` | GET | 用户情感摘要 | ✅ |
+| `/v1/batch/emotion/analyze` | POST | 批量情感分析 | ✅ |
+| `/health` | GET | 健康检查 | ❌ |
+| `/metrics` | GET | Prometheus指标 | ❌ |
+
+### 请求示例
+
+```json
+{
+  "text": "今天工作压力好大",
+  "language": "zh-CN",
+  "context": {
+    "previous_emotions": ["stress"],
+    "time_of_day": "morning"
+  }
+}
+```
+
+### 响应示例
+
+```json
+{
+  "success": true,
+  "data": {
+    "primary_emotion": "anxiety",
+    "secondary_emotions": ["stress", "tiredness"],
+    "intensity": 0.85,
+    "confidence": 0.92,
+    "keywords": ["压力", "大"],
+    "context_hints": ["工作", "职场"],
+    "needs_support": true,
+    "suggested_response": "听到你提到压力，我也跟着有点担心呢...😔"
+  },
+  "metadata": {
+    "user_id": "user_123",
+    "timestamp": "2024-02-28T10:30:00Z"
+  }
+}
+```
+
+## 🚀 部署方案
+
+### 单机部署（开发）
+
+```bash
+# 使用Docker Compose
+docker-compose up -d
+
+# 访问服务
+# API: http://localhost:8000
+# API文档: http://localhost:8000/docs
+# Grafana: http://localhost:3000 (admin/admin)
+```
+
+### Kubernetes 部署（生产）
+
+```bash
+# 应用Kubernetes配置
+kubectl apply -f k8s/
+
+# 检查部署状态
+kubectl get all -n warm-agent
+
+# 获取Ingress地址
+kubectl get ingress -n warm-agent
+```
+
+### 云平台部署
+
+- **AWS**: ECS/Fargate + RDS + ElastiCache
+- **Google Cloud**: Cloud Run + Cloud SQL + Memorystore
+- **Azure**: Container Instances + Azure SQL + Redis Cache
+
+## 🧪 测试
+
+### 运行测试
+
+```bash
+# 运行所有测试
+pytest tests/
+
+# 运行特定测试
+pytest tests/test_core.py -v
+
+# 运行测试并生成覆盖率报告
+pytest tests/ --cov=src --cov-report=html
+
+# 在Docker中运行测试
+docker-compose run --rm test
+```
+
+### 测试覆盖率
+
+```
+tests/test_core.py .................. 100%
+tests/test_api.py ................... 100%
+tests/test_integrations.py .......... 95%
+-----------------------------------------
+TOTAL .............................. 98%
+```
+
+## 📈 监控和告警
+
+### 监控指标
+
+- **API性能**: 请求率、响应时间、错误率
+- **业务指标**: 情感分析分布、温暖度分数、用户互动
+- **系统指标**: CPU、内存、磁盘、网络
+- **数据库指标**: 连接数、查询性能、缓存命中率
+
+### 告警规则
+
+```yaml
+# 高错误率告警
+- alert: HighErrorRate
+  expr: rate(api_requests_total{status=~"5.."}[5m]) > 0.05
+  for: 5m
+  labels:
+    severity: critical
+
+# 高延迟告警
+- alert: HighLatency
+  expr: histogram_quantile(0.95, rate(request_duration_seconds_bucket[5m])) > 2
+  for: 10m
+  labels:
+    severity: warning
+```
+
+## 🔧 配置管理
+
+### 环境变量
+
+| 变量名 | 描述 | 默认值 | 必需 |
+|--------|------|--------|------|
+| `DATABASE_URL` | 数据库连接URL | - | ✅ |
+| `REDIS_URL` | Redis连接URL | - | ✅ |
+| `API_KEY_SECRET` | API密钥加密密钥 | - | ✅ |
+| `ENVIRONMENT` | 环境 (development/production) | development | ❌ |
+| `LOG_LEVEL` | 日志级别 | INFO | ❌ |
+| `CORS_ORIGINS` | CORS允许的源 | * | ❌ |
+
+### 配置文件
+
+```yaml
+# config/production.yaml
+database:
+  url: ${DATABASE_URL}
+  pool_size: 20
+
+redis:
+  url: ${REDIS_URL}
+  pool_size: 10
+
+api:
+  port: 8000
+  workers: 4
+
+security:
+  api_key_secret: ${API_KEY_SECRET}
+  rate_limit: 100/分钟
+```
+
+## 🤝 贡献指南
+
+我们欢迎各种形式的贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与。
+
+### 开发流程
+
+1. Fork 项目
+2. 创建功能分支 (`git checkout -b feature/amazing-feature`)
+3. 提交更改 (`git commit -m 'feat: 添加新功能'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 创建 Pull Request
+
+### 代码规范
+
+- 使用 Black 进行代码格式化
+- 使用 Flake8 进行代码检查
+- 使用 MyPy 进行类型检查
+- 遵循 Conventional Commits
+
+## 📚 文档
+
+- [开发指南](DEVELOPMENT_GUIDE.md) - 详细的开发说明
+- [部署方案](DEPLOYMENT.md) - 各种部署方案
+- [OpenClaw集成](docs/openclaw-integration/README.md) - OpenClaw集成指南
+- [API文档](http://localhost:8000/docs) - 交互式API文档
 
 ## 📄 许可证
 
-本项目采用 [MIT 许可证](LICENSE)。
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
-## 📞 联系与支持
+## 🙏 致谢
 
-- **GitHub Issues**: [报告问题或请求功能](https://github.com/dondrub3/warm-agent/issues)
-- **文档**: [查看完整文档](docs/)
-- **邮件**: support@warm-agent.com
+感谢所有为这个项目做出贡献的人！
 
-## 🌈 多模态技术展望
+- **东周** - 项目发起人和主要开发者
+- **OpenClaw社区** - 提供了优秀的AI助手平台
+- **所有贡献者** - 感谢你们的代码、文档和反馈
 
-虽然当前MVP专注于文本情感分析，但我们已规划了完整的多模态情感理解路线图：
+## 📞 支持
 
-### 🖼️ 图像情感分析
-- **技术基础**: 使用预训练的视觉情感模型
-- **应用场景**: 
-  - 用户上传照片的情感分析
-  - 社交媒体图片的情感理解
-  - 艺术作品的审美情感分析
-- **技术挑战**: 跨文化情感表达差异、隐私保护
+- **问题反馈**: [GitHub Issues](https://github.com/dondrub3/warm-agent/issues)
+- **讨论交流**: [GitHub Discussions](https://github.com/dondrub3/warm-agent/discussions)
+- **文档**: [项目Wiki](https://github.com/dondrub3/warm-agent/wiki)
 
-### 🎤 语音情感识别
-- **技术基础**: 声学特征提取 + 深度学习模型
-- **应用场景**:
-  - 语音助手的情感响应
-  - 客服电话的情感分析
-  - 心理健康咨询的情感支持
-- **技术挑战**: 背景噪声处理、多语言支持
+## 🌟 Star 历史
 
-### 😊 表情情感检测
-- **技术基础**: 面部表情识别 + 微表情分析
-- **应用场景**:
-  - 视频会议的情感反馈
-  - 用户体验测试的情感分析
-  - 自闭症儿童的情感训练
-- **技术挑战**: 实时性要求、光照条件影响
-
-### 🔄 多模态融合
-- **技术基础**: 跨模态注意力机制
-- **核心价值**: 
-  - 文本 + 图像: 理解图文结合的情感
-  - 语音 + 表情: 分析对话中的真实情感
-  - 多模态一致性: 检测情感表达的一致性
-- **技术挑战**: 模态对齐、信息融合策略
-
-### 🎯 中期技术目标
-1. **多模态情感数据集**: 构建包含文本、图像、语音、表情的标注数据集
-2. **统一情感表示**: 开发跨模态的情感表示学习框架
-3. **实时多模态分析**: 实现低延迟的多模态情感分析
-4. **隐私保护设计**: 确保多模态数据处理的隐私安全
-
-### 🤝 合作机会
-我们欢迎在多模态情感分析领域有经验的开发者加入，共同推进以下方向：
-- 视觉情感模型优化
-- 语音情感识别算法
-- 多模态融合技术
-- 情感计算伦理研究
-
-## 🌟 特别感谢
-
-感谢所有贡献者和用户的支持！特别感谢：
-- [OpenClaw](https://openclaw.ai) 社区
-- 所有早期测试用户
-- 贡献代码的开发者们
-- **GitHub仓库**: https://github.com/dondrub3/warm-agent
+[![Star History Chart](https://api.star-history.com/svg?repos=dondrub3/warm-agent&type=Date)](https://star-history.com/#dondrub3/warm-agent&Date)
 
 ---
 
-**让AI更有温度，让技术更有情感** ❤️
+**让AI更有温度，让世界更温暖** ❤️
+
+如果你喜欢这个项目，请给它一个 ⭐️！

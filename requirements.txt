@@ -1,34 +1,44 @@
-# Warm Agent 核心依赖
+# Warm Agent 项目依赖
+# 精简版 - 移除 PyTorch，使用纯 CPU 规则引擎
 
-# 基础依赖
-requests>=2.28.0
-pydantic>=2.0.0
-python-dotenv>=1.0.0
+# 核心依赖
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
 
-# 数据处理
-numpy>=1.24.0
-pandas>=2.0.0
+# 数据库
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+redis==5.0.1
+celery==5.3.4
 
-# 机器学习/情感分析
-scikit-learn>=1.3.0
-transformers>=4.30.0
-torch>=2.0.0
+# 密码加密
+passlib==1.7.4
+bcrypt==4.1.2
 
-# 中文处理
-jieba>=0.42.1
-pypinyin>=0.48.0
+# 机器学习/自然语言处理 (轻量级，纯CPU)
+numpy==1.24.3
+scikit-learn==1.3.2
+jieba==0.42.1
+# 注意：移除了 torch 和 transformers，使用规则引擎进行情感分析
+# 如需升级到神经网络模型，请取消下面两行的注释：
+# transformers==4.36.0
+# torch==2.1.0
 
-# 配置管理
-pyyaml>=6.0
+# 开发工具
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.0
 
-# 异步支持（可选）
-aiohttp>=3.8.0
-asyncio>=3.4.3
+# 监控和日志
+prometheus-client==0.19.0
+structlog==23.2.0
 
-# 日志
-loguru>=0.7.0
-
-# 测试（开发依赖）
-pytest>=7.0.0
-pytest-asyncio>=0.21.0
-pytest-cov>=4.0.0
+# 其他
+python-dotenv==1.0.0
+httpx==0.25.1
+aiofiles==23.2.1
