@@ -184,3 +184,39 @@ WARM_AGENT_CONFIG.md
 *.env*
 *.key*
 *.pem*
+# 敏感文件
+.env
+*.env*
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# 密钥文件
+*.key
+*.pem
+*.crt
+*.cer
+
+# 密码文件
+*password*
+*secret*
+*token*
+
+# 内存文件
+memory/
+*.memory.*
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+temp/
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
